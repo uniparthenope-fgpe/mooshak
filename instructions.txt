@@ -1,0 +1,5 @@
+sudo chown -R jcpaiva:jcpaiva data/
+docker build -t jcpaiva/mooshak-fgpe . 
+docker push jcpaiva/mooshak-fgpe
+docker login --username=jcpaiva
+docker push jcpaiva/mooshak-fgpe
